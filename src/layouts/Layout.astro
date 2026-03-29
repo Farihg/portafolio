@@ -1,23 +1,58 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="description" content="Portafolio de Agustín Farías - Desarrollador Full Stack, estudiante de Ingeniería en Sistemas UTN" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
+<style is:global>
+	:root {
+		--primary: #16a34a;
+		--primary-light: #4ade80;
+		--dark: #0f5132;
+	}
+	html, body {
 		margin: 0;
+		padding: 0;
 		width: 100%;
 		height: 100%;
+		font-family: 'Onest', 'Arial', sans-serif; /* Recomiendo Onest para perfiles IT */
+		line-height: 1.6;
+		background: #f8fffe;
+		color: #333;
+		scroll-behavior: smooth;
+	}
+	* {
+		box-sizing: border-box;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		* {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+		}
+		html {
+			scroll-behavior: auto;
+		}
+	}
+	main {
+		padding-top: 80px; /* Account for fixed header */
 	}
 </style>
+<!-- Layout.astro -->

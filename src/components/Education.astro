@@ -1,0 +1,199 @@
+---
+// Education and Professional Profile section component
+---
+
+<section id="education" class="education">
+	<div class="container">
+		<h2>Formación y Perfil Profesional</h2>
+		<div class="education-content">
+			<div class="education-timeline">
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h3>Ingeniería en Sistemas de Información</h3>
+						<h4>Universidad Tecnológica Nacional (UTN)</h4>
+						<p class="timeline-date">2020 - Actualidad</p>
+						<p>Estudiante de cuarto año, completando las últimas materias de la carrera. He desarrollado conocimientos sólidos en algoritmos, estructuras de datos, bases de datos y metodologías de desarrollo de software.</p>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h3>Analista Desarrollador de Sistemas de Información</h3>
+						<h4>Universidad Tecnológica Nacional (UTN)</h4>
+						<p class="timeline-date">2023</p>
+						<p>Título intermedio que certifica conocimientos en análisis de sistemas, diseño de software y desarrollo de aplicaciones. Me proporcionó las bases teóricas y prácticas para abordar proyectos de desarrollo de manera estructurada.</p>
+					</div>
+				</div>
+			</div>
+			<div class="profile-highlights">
+				<h3>Perfil Profesional</h3>
+				<div class="highlights-grid">
+					<div class="highlight-card">
+						<div class="highlight-icon">🚀</div>
+						<h4>Aprendizaje Continuo</h4>
+						<p>Me mantengo actualizado con nuevas tecnologías y mejores prácticas a través de cursos online y proyectos prácticos.</p>
+					</div>
+					<div class="highlight-card">
+						<div class="highlight-icon">🎯</div>
+						<h4>Resolución de Problemas</h4>
+						<p>Enfoque analítico para identificar desafíos técnicos y diseñar soluciones eficientes que satisfagan los requerimientos.</p>
+					</div>
+					<div class="highlight-card">
+						<div class="highlight-icon">⚡</div>
+						<h4>Adaptabilidad</h4>
+						<p>Capacidad para aprender nuevas tecnologías rápidamente y trabajar en diferentes entornos de desarrollo.</p>
+					</div>
+					<div class="highlight-card">
+						<div class="highlight-icon">🔧</div>
+						<h4>Calidad del Código</h4>
+						<p>Compromiso con escribir código legible, mantenible y bien estructurado siguiendo estándares de la industria.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.education {
+		padding: 5rem 2rem;
+		background: linear-gradient(135deg, #0f5132 0%, #14532d 50%, #166534 100%);
+		color: white;
+		position: relative;
+	}
+	.education::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="network" width="15" height="15" patternUnits="userSpaceOnUse"><circle cx="7.5" cy="7.5" r="1" fill="%234ade80" opacity="0.1"/><line x1="7.5" y1="7.5" x2="15" y2="7.5" stroke="%234ade80" stroke-width="0.5" opacity="0.1"/><line x1="7.5" y1="7.5" x2="7.5" y2="15" stroke="%234ade80" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23network)"/></svg>');
+		pointer-events: none;
+	}
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+	}
+	.education h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		color: #a7f3d0;
+		font-weight: 700;
+	}
+	.education-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+	}
+	.education-timeline {
+		position: relative;
+	}
+	.education-timeline::before {
+		content: '';
+		position: absolute;
+		left: 15px;
+		top: 0;
+		bottom: 0;
+		width: 2px;
+		background: linear-gradient(to bottom, #4ade80, #22c55e);
+	}
+	.timeline-item {
+		position: relative;
+		margin-bottom: 2rem;
+		padding-left: 3rem;
+	}
+	.timeline-marker {
+		position: absolute;
+		left: 7px;
+		top: 8px;
+		width: 16px;
+		height: 16px;
+		background: #4ade80;
+		border-radius: 50%;
+		border: 3px solid #0f5132;
+	}
+	.timeline-content h3 {
+		margin: 0 0 0.5rem 0;
+		font-size: 1.3rem;
+		color: #d1fae5;
+		font-weight: 600;
+	}
+	.timeline-content h4 {
+		margin: 0 0 0.5rem 0;
+		font-size: 1.1rem;
+		color: #a7f3d0;
+		font-weight: 500;
+	}
+	.timeline-date {
+		color: #4ade80;
+		font-size: 0.9rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+	.timeline-content p {
+		color: #e2e8f0;
+		line-height: 1.6;
+		font-size: 1rem;
+	}
+	.profile-highlights h3 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		color: #a7f3d0;
+		font-weight: 700;
+	}
+	.highlights-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+	}
+	.highlight-card {
+		background: rgba(255, 255, 255, 0.05);
+		border: 1px solid rgba(74, 222, 128, 0.2);
+		border-radius: 12px;
+		padding: 1.5rem;
+		backdrop-filter: blur(10px);
+		transition: all 0.3s ease;
+	}
+	.highlight-card:hover {
+		transform: translateY(-3px);
+		background: rgba(255, 255, 255, 0.1);
+		border-color: #4ade80;
+	}
+	.highlight-icon {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	.highlight-card h4 {
+		margin: 0 0 1rem 0;
+		color: #d1fae5;
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+	.highlight-card p {
+		margin: 0;
+		color: #cbd5e1;
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+	@media (max-width: 768px) {
+		.education-content {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+		}
+		.highlights-grid {
+			grid-template-columns: 1fr;
+		}
+		.timeline-item {
+			padding-left: 2.5rem;
+		}
+		.education h2 {
+			font-size: 2rem;
+		}
+	}
+</style>
+<!-- Education.astro -->
