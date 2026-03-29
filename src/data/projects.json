@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Tu Viajecito",
+        "tags": ["Web App", "Full Stack", "Astro"],
+        "description": "Una plataforma integral para la gestión de viajes y turismo que conecta viajeros con experiencias locales auténticas. Ofrece una solución centralizada que combina reservas y gestión de itinerarios.",
+        "details": "Desarrollado con algoritmos de recomendación y una interfaz intuitiva. El backend robusto asegura escalabilidad y rendimiento.",
+        "icon": "✈️",
+        "demo": "#",
+        "repo": "#"
+    },
+    {
+        "title": "Tu Petlife",
+        "tags": ["Mobile App", "Full Stack", "Backend"],
+        "description": "Aplicación completa para el cuidado de mascotas. Resuelve la falta de herramientas digitales para el seguimiento integral de la salud animal.",
+        "details": "Incorpora recordatorios de vacunas y seguimiento de alimentación. Arquitectura técnica con backend API para sincronización en tiempo real.",
+        "icon": "🐾",
+        "demo": "#",
+        "repo": "#"
+    }
+]
