@@ -19,6 +19,10 @@ const { title } = Astro.props;
 	<body>
 		<slot />
 	</body>
+	<script>
+		const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+		document.documentElement.classList.add(theme);
+	</script>
 </html>
 
 <style is:global>
@@ -26,6 +30,40 @@ const { title } = Astro.props;
 		--primary: #16a34a;
 		--primary-light: #4ade80;
 		--dark: #0f5132;
+		--bg: #f8fffe;
+		--text: #333;
+		--header-bg: rgba(15, 81, 50, 0.9);
+		--header-text: #d1fae5;
+		--header-hover: #4ade80;
+		--logo-text: #a7f3d0;
+		--section-bg-light: linear-gradient(135deg, #f8fffe 0%, #e8f5f0 50%, #f0fdf4 100%);
+		--section-bg-dark: linear-gradient(135deg, #1a2a1a 0%, #2a3a2a 50%, #1a2a1a 100%);
+		--card-bg-light: rgba(255, 255, 255, 0.8);
+		--card-bg-dark: rgba(40, 50, 40, 0.9);
+		--title-color-light: #0f5132;
+		--title-color-dark: #a7f3d0;
+		--text-color-light: #1f2937;
+		--text-color-dark: #e5e5e5;
+	}
+	.dark {
+		--bg: #1a1a1a;
+		--text: #e5e5e5;
+		--header-bg: rgba(26, 26, 26, 0.9);
+		--header-text: #e5e5e5;
+		--header-hover: #4ade80;
+		--logo-text: #a7f3d0;
+		--section-bg-light: var(--section-bg-dark);
+		--card-bg-light: var(--card-bg-dark);
+		--title-color-light: var(--title-color-dark);
+		--text-color-light: var(--text-color-dark);
+	}
+	.dark {
+		--bg: #1a1a1a;
+		--text: #e5e5e5;
+		--header-bg: rgba(26, 26, 26, 0.9);
+		--header-text: #e5e5e5;
+		--header-hover: #4ade80;
+		--logo-text: #a7f3d0;
 	}
 	html, body {
 		margin: 0;
@@ -34,9 +72,10 @@ const { title } = Astro.props;
 		height: 100%;
 		font-family: 'Onest', 'Arial', sans-serif; /* Recomiendo Onest para perfiles IT */
 		line-height: 1.6;
-		background: #f8fffe;
-		color: #333;
+		background: var(--bg);
+		color: var(--text);
 		scroll-behavior: smooth;
+		transition: background 0.3s, color 0.3s;
 	}
 	* {
 		box-sizing: border-box;
