@@ -2,8 +2,8 @@
     {
         "title": "Tu Viajecito",
         "tags": ["Web App", "Full Stack", "Astro"],
-        "description": "Una plataforma integral para la gestión de viajes y turismo que conecta viajeros con experiencias locales auténticas. Ofrece una solución centralizada que combina reservas y gestión de itinerarios.",
-        "details": "Desarrollado con algoritmos de recomendación y una interfaz intuitiva. El backend robusto asegura escalabilidad y rendimiento.",
+        "description": "Una plataforma que brinda una forma rapida de organizar los objetos para salir de viajes y turismo que conecta viajeros con experiencias locales auténticas. Ofrece una solución centralizada que combina reservas y gestión de itinerarios.",
+        "details": "Desarrollado con algoritmos de recomendación y una interfaz intuitiva. El backend asegura escalabilidad y rendimiento.",
         "icon": "✈️",
         "demo": "#",
         "repo": "#"

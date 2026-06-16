@@ -7,7 +7,7 @@
 		<div class="logo">
 			<a href="#hero">Agustín</a>
 		</div>
-		<div class="theme-toggle" id="theme-toggle">🌙</div>
+		<!-- <div class="theme-toggle" id="theme-toggle">🌙</div> -->
 		<ul class="nav-links" id="nav-links">
 			<li><a href="#hero">Inicio</a></li>
 			<li><a href="#about">Sobre Mí</a></li>
@@ -45,19 +45,19 @@
 		});
 
 		// Theme toggle
-		themeToggle?.addEventListener('click', () => {
-			const html = document.documentElement;
-			const currentTheme = html.classList.contains('dark') ? 'dark' : 'light';
-			const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-			html.classList.remove(currentTheme);
-			html.classList.add(newTheme);
-			localStorage.setItem('theme', newTheme);
-			themeToggle.textContent = newTheme === 'dark' ? '🌙' : '☀️';
-		});
+		// themeToggle?.addEventListener('click', () => {
+		// 	const html = document.documentElement;
+		// 	const currentTheme = html.classList.contains('dark') ? 'dark' : 'light';
+		// 	const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+		// 	html.classList.remove(currentTheme);
+		// 	html.classList.add(newTheme);
+		// 	localStorage.setItem('theme', newTheme);
+		// 	themeToggle.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+		// });
 
 		// Set initial icon
-		const initialTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-		themeToggle.textContent = initialTheme === 'dark' ? '🌙' : '☀️';
+		// const initialTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+		// themeToggle.textContent = initialTheme === 'dark' ? '🌙' : '☀️';
 	});
 </script>
 
