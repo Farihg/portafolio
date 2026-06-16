@@ -11,34 +11,31 @@
 		<div class="particle-strengths"></div>
 		<div class="particle-strengths"></div>
 	</div>
+	
 	<div class="container">
 		<div class="section-header">
 			<span class="eyebrow">Cómo trabajo</span>
-			<h2 id="strengths-title">Cómo encaro cada proyecto</h2>
+			<h2 id="strengths-title">Mi enfoque profesional</h2>
 			<p class="section-description">
-				Me enfoco en desarrollar soluciones claras, útiles y bien pensadas, combinando
-				criterio técnico, aprendizaje continuo y una mirada práctica orientada a resultados.
+				Mi enfoque combina criterio técnico, claridad y resultados sostenibles para cada proyecto.
 			</p>
 		</div>
 
 		<div class="strengths-content">
 			<div class="strengths-text">
 				<p>
-					Trabajo de manera organizada y con foco en los objetivos del proyecto. Me interesa
-					construir soluciones que no solo funcionen correctamente, sino que también sean
-					claras, mantenibles y sostenibles en el tiempo.
+					Trabajo con un plan claro y foco en los objetivos del proyecto. Busco soluciones 
+					mantenibles y alineadas con las necesidades del negocio.
 				</p>
 
 				<p>
-					Me adapto con rapidez a nuevos entornos, herramientas y desafíos técnicos. Disfruto
-					aprender, investigar y mejorar de forma constante, tanto en lo técnico como en la
-					manera de abordar cada proyecto.
+					Me adapto rápidamente a nuevos desafíos y tecnologías, y valoro la mejora continua
+					para optimizar tanto el producto como el proceso de desarrollo.
 				</p>
 
 				<p>
-					Valoro el código limpio, la buena comunicación y las decisiones bien fundamentadas.
-					Creo que un buen desarrollo nace de entender el problema real, priorizar
-					correctamente y construir soluciones que aporten valor de forma concreta.
+					Priorizo la comunicación efectiva, la documentación y las decisiones fundamentadas
+					para entregar soluciones de software confiables y de largo plazo.
 				</p>
 			</div>
 
@@ -46,10 +43,9 @@
 				<div class="strengths-quote">
 					<div class="quote-mark" aria-hidden="true">“</div>
 					<blockquote>
-						Busco que cada solución tenga sentido no solo desde lo técnico, sino también
-						desde el problema que resuelve y el valor que genera.
+						Confio en que cada solución debe ser coherente, eficiente y directamente vinculada al problema que resuelve.
 					</blockquote>
-					<cite>Agustín</cite>
+					<cite></cite>
 				</div>
 
 				<div class="values-grid">
@@ -94,34 +90,38 @@
 </section>
 
 <style>
+	/* --- ESTILOS PRINCIPALES --- */
 	.strengths {
 		position: relative;
 		overflow: hidden;
-		padding: 5.5rem 1.5rem;
-		background: var(--section-bg-light);
+		padding: 6rem 1.5rem;
+		background-color: #0A2E1E; /* Fondo oscuro principal */
+		font-family: system-ui, -apple-system, sans-serif;
 	}
 
+	/* Gradientes sutiles de fondo */
 	.strengths::before {
 		content: "";
 		position: absolute;
 		inset: 0;
 		background:
-			radial-gradient(circle at 15% 20%, rgba(34, 197, 94, 0.1), transparent 22%),
-			radial-gradient(circle at 85% 80%, rgba(74, 222, 128, 0.12), transparent 24%);
+			radial-gradient(circle at 15% 20%, rgba(19, 160, 84, 0.08), transparent 30%),
+			radial-gradient(circle at 85% 80%, rgba(168, 231, 204, 0.05), transparent 30%);
 		pointer-events: none;
 	}
 
+	/* Patrón de cuadrícula de fondo */
 	.strengths::after {
 		content: "";
 		position: absolute;
 		inset: 0;
 		background-image:
-			linear-gradient(rgba(255, 255, 255, 0.25) 1px, transparent 1px),
-			linear-gradient(90deg, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
+			linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 		background-size: 32px 32px;
-		mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), transparent 85%);
+		mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent 85%);
+		-webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent 85%);
 		pointer-events: none;
-		opacity: 0.5;
 	}
 
 	.container {
@@ -131,181 +131,120 @@
 		margin: 0 auto;
 	}
 
+	/* --- CABECERA DE SECCIÓN --- */
 	.section-header {
 		max-width: 760px;
-		margin: 0 auto 3.5rem;
+		margin: 0 auto 4rem;
 		text-align: center;
 		animation: headerSlideUp 1s ease-out;
-	}
-
-	@keyframes headerSlideUp {
-		from {
-			opacity: 0;
-			transform: translateY(30px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
 	}
 
 	.eyebrow {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		padding: 0.45rem 0.9rem;
+		padding: 0.5rem 1.2rem;
 		border-radius: 999px;
-		border: 1px solid rgba(22, 163, 74, 0.16);
-		background: var(--card-bg-light);
+		background: rgba(19, 160, 84, 0.1); /* Fondo píldora verde */
+		border: 1px solid rgba(19, 160, 84, 0.3);
 		backdrop-filter: blur(8px);
-		color: #15803d;
-		font-size: 0.78rem;
+		color: #A8E7CC; /* Texto Jade */
+		font-size: 0.85rem;
 		font-weight: 700;
-		letter-spacing: 0.08em;
+		letter-spacing: 0.1em;
 		text-transform: uppercase;
 		animation: eyebrowFadeIn 1s ease-out 0.2s both;
 	}
 
-	@keyframes eyebrowFadeIn {
-		from {
-			opacity: 0;
-			transform: translateY(-10px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
 	.section-header h2 {
-		margin: 1rem 0 0;
-		font-size: clamp(2rem, 4vw, 3rem);
+		margin: 1.5rem 0 1rem;
+		font-size: clamp(2.5rem, 4vw, 3.2rem);
 		line-height: 1.1;
 		letter-spacing: -0.03em;
-		color: var(--title-color-light);
+		color: #DAFFF0; /* Título Menta pálido */
 		font-weight: 800;
 		animation: titleSlideUp 1s ease-out 0.4s both;
 	}
 
-	@keyframes titleSlideUp {
-		from {
-			opacity: 0;
-			transform: translateY(20px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
 	.section-description {
 		max-width: 650px;
-		margin: 1rem auto 0;
-		font-size: 1.05rem;
+		margin: 0 auto;
+		font-size: 1.15rem;
 		line-height: 1.8;
-		color: var(--text-color-light);
+		color: #A9B8AF; /* Texto descriptivo */
 		animation: descFadeIn 1s ease-out 0.6s both;
 	}
 
-	@keyframes descFadeIn {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
-	}
-
+	/* --- CONTENIDO PRINCIPAL --- */
 	.strengths-content {
 		display: grid;
 		grid-template-columns: 1.05fr 0.95fr;
-		gap: 2rem;
+		gap: 2.5rem;
 		align-items: start;
 		animation: contentSlideUp 1s ease-out 0.8s both;
 	}
 
-	@keyframes contentSlideUp {
-		from {
-			opacity: 0;
-			transform: translateY(40px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
+	/* --- TARJETAS (CARDS) --- */
 	.strengths-text,
 	.strengths-quote,
 	.value-item {
-		background: var(--card-bg-light);
-		border: 1px solid rgba(22, 163, 74, 0.14);
+		background: rgba(255, 255, 255, 0.03); /* Fondo tipo Glassmorphism oscuro */
+		border: 1px solid rgba(168, 231, 204, 0.15); /* Borde sutil Jade */
 		backdrop-filter: blur(12px);
-		box-shadow: 0 14px 32px rgba(16, 24, 40, 0.06);
-		transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		-webkit-backdrop-filter: blur(12px);
+		box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2);
+		transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}
 
+	/* Comportamiento Hover general para tarjetas */
+	.strengths-text:hover,
+	.strengths-quote:hover,
+	.value-item:hover {
+		background: rgba(255, 255, 255, 0.05);
+		border-color: #13A054; /* Borde Acento */
+		transform: translateY(-4px);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+	}
+
+	/* --- TEXTO IZQUIERDA --- */
 	.strengths-text {
-		padding: 2rem;
+		padding: 2.5rem;
 		border-radius: 24px;
-	}
-
-	.strengths-text:hover {
-		background: var(--card-bg-light);
-		border-color: rgba(22, 163, 74, 0.2);
-		transform: translateY(-2px);
-		box-shadow: 0 20px 40px rgba(16, 24, 40, 0.1);
 	}
 
 	.strengths-text p {
 		margin: 0;
 		font-size: 1.05rem;
 		line-height: 1.9;
-		color: var(--text-color-light);
+		color: #A9B8AF;
 	}
 
 	.strengths-text p + p {
-		margin-top: 1.35rem;
+		margin-top: 1.5rem;
 	}
 
+	/* --- COLUMNA DERECHA (VISUAL) --- */
 	.strengths-visual {
 		display: flex;
 		flex-direction: column;
-		gap: 1.25rem;
+		gap: 1.5rem;
 	}
 
+	/* --- CITA --- */
 	.strengths-quote {
 		position: relative;
-		padding: 2rem;
+		padding: 2.5rem;
 		border-radius: 24px;
 		animation: quoteSlideIn 1s ease-out 1s both;
 	}
 
-	@keyframes quoteSlideIn {
-		from {
-			opacity: 0;
-			transform: translateX(30px);
-		}
-		to {
-			opacity: 1;
-			transform: translateX(0);
-		}
-	}
-
-	.strengths-quote:hover {
-		background: var(--card-bg-light);
-		border-color: rgba(22, 163, 74, 0.2);
-		transform: translateY(-2px);
-		box-shadow: 0 20px 40px rgba(16, 24, 40, 0.1);
-	}
-
 	.quote-mark {
 		position: absolute;
-		top: 0.45rem;
-		left: 1rem;
-		font-size: 4.25rem;
+		top: 0.5rem;
+		left: 1.5rem;
+		font-size: 5rem;
 		line-height: 1;
-		color: rgba(22, 163, 74, 0.14);
+		color: rgba(19, 160, 84, 0.15); /* Comilla de fondo sutil */
 		font-family: Georgia, serif;
 		user-select: none;
 	}
@@ -313,86 +252,112 @@
 	.strengths-quote blockquote {
 		position: relative;
 		z-index: 1;
-		margin: 0 0 1rem;
-		font-size: 1.15rem;
-		line-height: 1.8;
+		margin: 0 0 1.5rem;
+		font-size: 1.2rem;
+		line-height: 1.7;
 		font-style: italic;
-		color: var(--text-color-light);
+		color: #DAFFF0;
 	}
 
 	.strengths-quote cite {
 		font-style: normal;
 		font-weight: 700;
-		color: var(--primary);
+		font-size: 1.1rem;
+		color: #13A054; /* Nombre en color Acento */
+	}
+	
+	.strengths-quote cite::before {
+		content: '— ';
 	}
 
+	/* --- GRILLA DE VALORES --- */
 	.values-grid {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 1rem;
+		gap: 1.25rem;
 		animation: gridSlideIn 1s ease-out 1.2s both;
 	}
 
-	@keyframes gridSlideIn {
-		from {
-			opacity: 0;
-			transform: translateY(20px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
 	.value-item {
-		padding: 1.35rem;
+		padding: 1.5rem;
 		border-radius: 20px;
-		transition:
-			transform 0.25s ease,
-			box-shadow 0.25s ease,
-			border-color 0.25s ease,
-			background 0.25s ease;
-	}
-
-	.value-item:hover {
-		transform: translateY(-4px);
-		box-shadow: 0 18px 40px rgba(16, 24, 40, 0.1);
-		border-color: rgba(22, 163, 74, 0.22);
-		background: var(--card-bg-light);
 	}
 
 	.value-icon {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		width: 52px;
-		height: 52px;
-		margin-bottom: 1rem;
+		width: 48px;
+		height: 48px;
+		margin-bottom: 1.2rem;
 		border-radius: 14px;
-		background: linear-gradient(135deg, rgba(34, 197, 94, 0.12), rgba(16, 185, 129, 0.08));
-		font-size: 1.65rem;
+		background: rgba(19, 160, 84, 0.1);
+		border: 1px solid rgba(19, 160, 84, 0.25);
+		font-size: 1.5rem;
 		transition: all 0.3s ease;
 	}
 
 	.value-item:hover .value-icon {
-		transform: scale(1.1);
-		background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.15));
+		transform: scale(1.1) rotate(5deg);
+		background: rgba(19, 160, 84, 0.2);
+		border-color: #13A054;
 	}
 
 	.value-item h3 {
-		margin: 0 0 0.55rem;
-		font-size: 1rem;
+		margin: 0 0 0.75rem;
+		font-size: 1.1rem;
 		font-weight: 700;
-		color: var(--title-color-light);
+		color: #A8E7CC; /* Sub-títulos Jade */
 	}
 
 	.value-item p {
 		margin: 0;
-		font-size: 0.94rem;
-		line-height: 1.65;
-		color: var(--text-color-light);
+		font-size: 0.95rem;
+		line-height: 1.6;
+		color: #A9B8AF;
 	}
 
+	/* --- PARTÍCULAS ANIMADAS --- */
+	.strengths-bg-particles {
+		position: absolute;
+		inset: 0;
+		overflow: hidden;
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	.particle-strengths {
+		position: absolute;
+		background: #13A054;
+		border-radius: 50%;
+		opacity: 0.3;
+		animation: floatUp 15s infinite linear;
+	}
+
+	.particle-strengths:nth-child(1) { width: 6px; height: 6px; left: 10%; bottom: -10px; animation-duration: 20s; }
+	.particle-strengths:nth-child(2) { width: 4px; height: 4px; left: 30%; bottom: -10px; animation-duration: 15s; animation-delay: 2s; }
+	.particle-strengths:nth-child(3) { width: 8px; height: 8px; left: 50%; bottom: -10px; animation-duration: 25s; animation-delay: 5s; }
+	.particle-strengths:nth-child(4) { width: 5px; height: 5px; left: 70%; bottom: -10px; animation-duration: 18s; animation-delay: 1s; }
+	.particle-strengths:nth-child(5) { width: 7px; height: 7px; left: 90%; bottom: -10px; animation-duration: 22s; animation-delay: 4s; }
+	.particle-strengths:nth-child(6) { width: 3px; height: 3px; left: 20%; bottom: -10px; animation-duration: 12s; animation-delay: 7s; }
+
+	@keyframes floatUp {
+		0% { transform: translateY(0) translateX(0); opacity: 0; }
+		10% { opacity: 0.4; }
+		90% { opacity: 0.4; }
+		100% { transform: translateY(-1000px) translateX(20px); opacity: 0; }
+	}
+
+	/* --- ANIMACIONES DE ENTRADA --- */
+	@keyframes headerSlideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+	@keyframes eyebrowFadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+	@keyframes titleSlideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+	@keyframes descFadeIn { from { opacity: 0; } to { opacity: 1; } }
+	@keyframes contentSlideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+	@keyframes quoteSlideIn { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+	@keyframes gridSlideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+	/* --- RESPONSIVE --- */
 	@media (max-width: 920px) {
 		.strengths-content {
 			grid-template-columns: 1fr;
@@ -401,43 +366,35 @@
 
 	@media (max-width: 768px) {
 		.strengths {
-			padding: 4.5rem 1rem;
+			padding: 4rem 1rem;
 		}
 
 		.section-header {
-			margin-bottom: 2.5rem;
+			margin-bottom: 3rem;
 		}
 
-		.section-description {
-			font-size: 1rem;
+		.section-header h2 {
+			font-size: 2.2rem;
 		}
 
 		.strengths-text,
 		.strengths-quote {
-			padding: 1.5rem;
+			padding: 1.8rem;
 		}
 
 		.values-grid {
 			grid-template-columns: 1fr;
 		}
-
-		.strengths-quote blockquote {
-			font-size: 1.05rem;
-		}
-
-		.strengths-text p {
-			font-size: 1rem;
-			line-height: 1.8;
-		}
 	}
 
 	@media (prefers-reduced-motion: reduce) {
-		.value-item {
-			transition: none;
-		}
-
-		.value-item:hover {
-			transform: none;
+		.strengths-text, .strengths-quote, .value-item { transition: none; }
+		.strengths-text:hover, .strengths-quote:hover, .value-item:hover { transform: none; }
+		.particle-strengths { display: none; }
+		.section-header, .eyebrow, .section-header h2, .section-description, .strengths-content, .strengths-quote, .values-grid {
+			animation: none !important;
+			opacity: 1 !important;
+			transform: none !important;
 		}
 	}
 </style>
